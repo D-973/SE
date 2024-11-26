@@ -1,0 +1,85 @@
+body {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 20px;
+  background-color: #f8f5ff; /* Light purple tint background */
+}
+
+.containerbot {
+  border: 2px solid #b19cd9; /* Light purple border */
+  background-color: #ffffff; /* White background for bot messages */
+  border-radius: 15px; /* Slightly more rounded corners */
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(138, 43, 226, 0.1); /* Subtle purple shadow */
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.darker {
+  border-color: #673ab7; /* Darker purple border */
+  background-color: #ede7f6; /* Light purple background for user messages */
+  justify-content: center;
+  align-items: center;
+}
+
+.containerbot::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerbot img {
+  float: left;
+  max-width: 50px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 70%;
+  border: 2px solid #9c27b0; /* Purple border for avatar */
+}
+
+.containerbot img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.time-right {
+  float: right;
+  color: #8e24aa; /* Purple tint for timestamp */
+}
+
+.time-left {
+  float: left;
+  color: #6a1b9a; /* Darker purple tint for timestamp */
+}
+
+/* Additional styles for card components */
+.card {
+  border-color: #9c27b0;
+  box-shadow: 0 4px 8px rgba(156, 39, 176, 0.1);
+}
+
+.card-header {
+  background-color: #9c27b0 !important; /* Override Bootstrap's bg-info */
+  color: white !important;
+  border-bottom: 2px solid #7b1fa2;
+}
+
+.btn-primary {
+  background-color: #9c27b0;
+  border-color: #7b1fa2;
+}
+
+.btn-primary:hover {
+  background-color: #8e24aa;
+  border-color: #6a1b9a;
+}
+
+.form-control:focus {
+  border-color: #9c27b0;
+  box-shadow: 0 0 0 0.2rem rgba(156, 39, 176, 0.25);
+}
